@@ -20,12 +20,11 @@
         <button type = "submit">Enviar</button>
 
     </form>
-
-
-  
-    
-
-
-
+<h2>Listado de Estudiantes</h2>
+<ul>
+{% for estudiante in listado %}
+<li>{{ estudiante.Nombre }} - {{ estudiante.Correo }}</li>
+{% endfor %}
+</ul>
 </body>
 </html>
